@@ -267,7 +267,37 @@ document.getElementById("demo").innerHTML = navigator.javaEnabled();
 
 ---
 
-## Window Popup Alert
+## Window Popup Boxes
+
+* Alert Box
+* Confirm Box
+* Prompt Box
+
+### Alert Box
+
+```javascript
+alert("I am an alert box!");
+```
+
+### Confirm Box
+
+```javascript
+var result = confirm("sometext");
+(result) ? alert('YES') : alert('NO');
+```
+
+### Prompt Box
+
+```javascript
+var name = prompt('Please enter your name');
+alert('Your name is: '+name);
+```
+
+### Line Breaks
+
+```javascript
+alert("Hello\nHow are you?");
+```
 
 ---
 
