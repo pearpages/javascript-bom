@@ -95,3 +95,78 @@ Available Screen Height: 1057
 ```
 
 ---
+
+## Window Location
+
+> The window.location object can be used to get the current page address (URL) and to redirect the browser to a new page.
+
+The window.location object can be written without the window prefix.
+
+* location.href   returns the href (URL) of the current page
+* location.hostname   returns the domain name of the web host
+* location.pathname   returns the path and filename of the current page
+* location.protocol   returns the web protocol used (http: or https:)
+* location.assign   loads a new document
+
+```javascript
+document.getElementById("demo").innerHTML =
+"Page location is " + window.location.href;
+```
+
+```javascript
+document.getElementById("demo").innerHTML =
+"Page hostname is " + window.location.hostname;
+```
+
+```javascript
+document.getElementById("demo").innerHTML =
+"Page path is " + window.location.pathname;
+```
+
+```javascript
+document.getElementById("demo").innerHTML =
+"Page protocol is " + window.location.protocol;
+```
+
+### Location Assign
+
+The window.location.assign() method loads a new document.
+
+```javascript
+<html>
+<head>
+<script>
+function newDoc() {
+    window.location.assign("http://www.w3schools.com")
+}
+</script>
+</head>
+<body>
+
+<input type="button" value="Load new document" onclick="newDoc()">
+
+</body>
+</html>
+```
+
+---
+
+## Window History
+
+---
+
+## Window Navigator
+
+---
+
+## Window Popup Alert
+
+---
+
+## Window Timing
+
+---
+
+## Window Cookies
+
+---
