@@ -36,3 +36,62 @@ document.getElementById("header");
 
 ---
 
+## Window Screen
+
+> The window.screen object contains information about the user's screen.
+
+> The window.screen object can be written without the window prefix.
+
+* screen.width
+* screen.height
+* screen.availWidth
+* screen.availHeight
+* screen.colorDepth
+* screen.pixelDepth
+
+### Screen availWidth
+
+```javascript
+document.getElementById("demo").innerHTML =
+"Screen Width: " + screen.width;
+
+// Result will be:
+
+Screen Width: 2560
+```
+
+### Screen Height
+
+```javascript
+document.getElementById("demo").innerHTML =
+"Screen Height: " + screen.height;
+// Result will be:
+
+Screen Height: 1080
+```
+
+### Screen Available Width
+
+> The screen.availWidth property returns the width of the visitor's screen, in pixels, minus interface features like the Windows Taskbar.
+
+```javascript
+document.getElementById("demo").innerHTML =
+"Available Screen Width: " + screen.availWidth;
+
+//Result will be:
+
+Available Screen Width: 2556
+```
+
+### Screen Available Height
+
+```javascript
+document.getElementById("demo").innerHTML =
+"Available Screen Height: " + screen.availHeight;
+
+//Result will be:
+
+Available Screen Height: 1057
+```
+
+---
