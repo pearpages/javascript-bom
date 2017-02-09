@@ -179,6 +179,92 @@ function goBack() {
 
 ## Window Navigator
 
+> The window.navigator object contains information about the visitor's browser.
+
+* navigator.appName
+* navigator.appCodeName
+* navigator.platform
+
+### Browser Cookies
+
+The cookieEnabled property returns true if cookies are enabled, otherwise false.
+
+```javascript
+document.getElementById("demo").innerHTML =
+"cookiesEnabled is " + navigator.cookieEnabled;
+```
+
+### Browser Application Name
+
+The appName property returns the application name of the browser.
+
+> Strange enough, "Netscape" is the application name for both IE11, Chrome, Firefox, and Safari.
+
+```javascript
+document.getElementById("demo").innerHTML =
+"navigator.appName is " + navigator.appName;
+```
+
+### Browser Application Code Name
+
+> "Mozilla" is the application code name for both Chrome, Firefox, IE, Safari, and Opera.
+
+```javascript
+document.getElementById("demo").innerHTML =
+"navigator.appCodeName is " + navigator.appCodeName;
+```
+
+### The Browser Engine
+
+The product property returns the product name of the browser engine:
+
+```javascript
+document.getElementById("demo").innerHTML =
+"navigator.product is " + navigator.product;
+```
+
+### The Browser Version
+
+```javascript
+document.getElementById("demo").innerHTML = navigator.appVersion;
+```
+
+### The Browser Agent 
+
+> The userAgent property returns the user-agent header sent by the browser to the server:
+
+```javascript
+document.getElementById("demo").innerHTML = navigator.userAgent;
+```
+
+### The Browser platform
+
+The platform property returns the browser platform (operating system):
+
+```javascript
+document.getElementById("demo").innerHTML = navigator.platform;
+```
+
+### The Browser Language
+
+The language property returns the browser's language.
+
+```javascript
+document.getElementById("demo").innerHTML = navigator.language;
+```
+
+### Is The Browser Online? 
+
+```javascript
+document.getElementById("demo").innerHTML = navigator.onLine;
+```
+
+### Is Java Enabled?
+
+```javascript
+document.getElementById("demo").innerHTML = navigator.javaEnabled();
+```
+
 ---
 
 ## Window Popup Alert
