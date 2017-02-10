@@ -303,6 +303,84 @@ alert("Hello\nHow are you?");
 
 ## Window Timing
 
+The window object allows execution of code at specified time intervals.
+
+These time intervals are called timing events.
+
+* setTimeout(function, milliseconds) *Executes a function, after waiting a specified number of milliseconds.*
+* setInterval(function, milliseconds) *Same as setTimeout(), but repeats the execution of the function continuously.*
+
+> The setTimeout() and setInterval() are both methods of the HTML DOM Window object.
+
+### setTimeout() method
+
+```html
+<button onclick="setTimeout(myFunction, 3000)">Try it</button>
+
+<script>
+function myFunction() {
+    alert('Hello');
+}
+</script>
+```
+
+#### How to Stop the Execution?
+
+If the function has not already been executed, you can stop the execution by calling the clearTimeout() method:
+
+```
+myVar = setTimeout(function, milliseconds);
+clearTimeout(myVar);
+```
+
+```javascript
+<button onclick="myVar = setTimeout(myFunction, 3000)">Try it</button>
+
+<button onclick="clearTimeout(myVar)">Stop it</button>
+```
+
+### setInterval() method
+
+The setInterval() method repeats a given function at every given time-interval.
+
+```
+window.setInterval(function, milliseconds);
+
+// or 
+
+setInterval(function, milliseconds);
+```
+
+```javascript
+var myVar = setInterval(myTimer, 1000);
+
+function myTimer() {
+    var d = new Date();
+    document.getElementById("demo").innerHTML = d.toLocaleTimeString();
+}
+```
+
+#### How to Stop the Execution?
+
+```
+myVar = setInterval(function, milliseconds);
+clearInterval(myVar);
+````
+
+```html
+<p id="demo"></p>
+
+<button onclick="clearInterval(myVar)">Stop time</button>
+
+<script>
+var myVar = setInterval(myTimer, 1000);
+function myTimer() {
+    var d = new Date();
+    document.getElementById("demo").innerHTML = d.toLocaleTimeString();
+}
+</script>
+```
+
 ---
 
 ## Window Cookies
