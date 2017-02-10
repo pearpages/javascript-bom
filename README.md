@@ -385,6 +385,40 @@ function myTimer() {
 
 ## Window Cookies
 
+Cookies are saved in name-value pairs.
 
+### Create / Change a Cookie
+
+```javascript
+document.cookie = "username=John Doe; expires=Thu, 18 Dec 2013 12:00:00 UTC";
+```
+
+### path
+
+With a path parameter, you can tell the browser what path the cookie belongs to. By default, the cookie belongs to the current page.
+
+```javascript
+document.cookie = "username=John Doe; expires=Thu, 18 Dec 2013 12:00:00 UTC; path=/";
+```
+
+### Read a Cookie
+
+```javascript
+var x = document.cookie;
+```
+
+> document.cookie will return all cookies in one string much like: cookie1=value; cookie2=value; cookie3=value;
+
+### Delete a Cookie
+
+Just set the expires parameter to a passed date.
+
+```javascript
+document.cookie = "username=; expires=Thu, 01 Jan 1970 00:00:00 UTC; path=/;";
+```
+
+> You should define the cookie path to ensure that you delete the right cookie.
+
+> Some browsers will not let you delete a cookie if you don't specify the path.
 
 ---
