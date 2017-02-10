@@ -365,7 +365,7 @@ function myTimer() {
 ```
 myVar = setInterval(function, milliseconds);
 clearInterval(myVar);
-````
+```
 
 ```html
 <p id="demo"></p>
@@ -384,5 +384,7 @@ function myTimer() {
 ---
 
 ## Window Cookies
+
+
 
 ---
